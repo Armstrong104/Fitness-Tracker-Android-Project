@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivityPage"
+    android:background="@drawable/back_15"
+    android:orientation="vertical"
+    >
+
+
+    <EditText
+        android:id="@+id/SignUp_EmailId"
+        android:layout_width="337dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:hint="Email address"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/SignUp_NewPassword"
+        android:layout_width="339dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="New Password"
+        android:inputType="numberPassword"
+        android:paddingLeft="15dp"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/SignUp_Button"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:background="#FFEB3B"
+        android:onClick="show_Main2_Activity"
+        android:text="Sign Up"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        >
+
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp">
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Already Registered !!"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/SignUppage_SignInbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="15dp"
+            android:onClick="showSignInPage"
+            android:text="Sign In"
+            android:textSize="20dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressId"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    </ProgressBar>
+
+
+</LinearLayout>
